@@ -6,8 +6,6 @@ tokeniser = re.compile("(?:[A-Za-z]+)|(?:-?[0-9]+(?:\.[0-9]+)?)")
 pairs = {}
 
 for line in sys.stdin:
-	if len(line.strip()) == 0:
-		continue
 	tokens = tokeniser.findall(line)
 	fixedTokens = []
 	for t in tokens:
