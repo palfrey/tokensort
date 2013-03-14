@@ -51,5 +51,5 @@ keys = sorted(pairs.keys(), cmp = tokenSort)
 
 for k in keys:
 	#print k,
-	for l in sorted(pairs[k]):
+	for l in pairs[k]:
 		print l
